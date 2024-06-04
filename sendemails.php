@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $to = "artizteca@gmail.com";
         $subject = "Nuevo contacto desde el formulario";
         $message = "Has recibido un nuevo mensaje desde tu formulario de contacto.\n\nCorreo: $email";
-        $headers = "From: no-reply@artiztea.com\r\n";
+        $headers = "From: no-reply@artizteca.com\r\n";
         $headers .= "Reply-To: $email\r\n";
         
         if (mail($to, $subject, $message, $headers)) {
